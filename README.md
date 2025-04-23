@@ -2,6 +2,9 @@
 
 `StreamingLabel` is a custom `UILabel` subclass that animates text character-by-character, creating a streaming effect that mimics how responses are shown in AI chat interfaces.
 
+## Demo
+![Demo.gif](https://github.com/RaajeevChandran/StreamingLabel/blob/main/Demo.gif)
+
 ## Features
 - Animate text with configurable speed
 - Start, stop, and reset streaming
