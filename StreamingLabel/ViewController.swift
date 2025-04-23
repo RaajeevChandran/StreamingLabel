@@ -28,6 +28,8 @@ class ViewController: UIViewController {
     }
 
     private func setupViews() {
+        streamingLabel.delegate = self
+        
         startButton.setTitle("Start Typing", for: .normal)
         stopButton.setTitle("Stop Typing", for: .normal)
         resetButton.setTitle("Reset", for: .normal)
@@ -109,3 +111,8 @@ class ViewController: UIViewController {
     }
 }
 
+extension ViewController: StreamingLabelDelegate {
+    func didStreamingComplete() {
+        print("Streaming completed!")
+    }
+}
