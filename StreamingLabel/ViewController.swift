@@ -89,7 +89,7 @@ class ViewController: UIViewController {
     }
 
     private func setSpeedLabelText() {
-        speedLabel.text = String(format: "Speed: %.0f characters per second", streamingLabel.charactersPerSecond)
+        speedLabel.text = String(format: "Speed: %.2f", speedSlider.value / 100)
     }
 
     @objc private func startTyping() {
